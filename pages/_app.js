@@ -3,14 +3,15 @@ import { Layout } from '../components'
 import { Toaster } from 'react-hot-toast'
 import { StateContext } from '../context/StateContext'
 function MyApp({ Component, pageProps }) {
-  return 
+  return (
   <StateContext>
   <Layout>
-      <Toaster/>
+
+    <Toaster/>
   <Component {...pageProps} />
-    </Layout>
-  </StateContext>
-   
+  </Layout>  
+    
+  </StateContext>)
   
 }
 
